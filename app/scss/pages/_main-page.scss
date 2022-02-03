@@ -1,0 +1,12 @@
+// this is the styling, responsible for index.html (main page, landing page etc. whatever you wanna call it)
+
+@use "../use" as *;
+
+main#index {
+  height: 45vh;
+
+  & .container {
+    height: 100%;
+    @include flex(flex, center, center, column);
+  }
+}

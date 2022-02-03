@@ -4,23 +4,200 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Riido Yaado Boilerplate" />
-    <meta name="author" content="Reed Yard | Nádudvari Márk" />
+    <meta name="description" content="something.hu" />
+    <meta name="author" content="Reed Yard" />
     <link rel="stylesheet" href="dist/style.css" />
+    <link rel="shortcut icon" href="/img/base_logo.webp" type="image/x-icon" />
+    <!--
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>"
     />
-    <title>Riido Yaado Boilerplate</title>
+    -->
+    <title>something.hu</title>
   </head>
   <body>
-    <main>
-      <section>
-        <div class="container">
-          <h1 class="container__title">riido yaado</h1>
+    <!-- navbar -->
+    <navbar class="navbar">
+      <div class="navbar-container" id="main-nav">
+        <div class="container-row">
+          <div class="navbar-logo">
+            <!--
+            <a href="/"><img src="/img/base_logo.webp" alt="logó" /></a>
+            -->
+            <a href="/" aria-label="polisztirolbeton.hu">something.hu</a>
+          </div>
+          <button
+            role="button"
+            type="button"
+            aria-label="menü gomb"
+            class="nav-toggler"
+            id="nav-toggle"
+          >
+            <span></span>
+          </button>
+          <nav class="navbar-nav" id="navbar-nav">
+            <ul>
+              <li class="nav-link">
+                <a href="/" aria-label="Kezdőlap">Kezdőlap</a>
+              </li>
+              <li class="nav-link">
+                <a href="/" aria-label="Regisztráció">Regisztráció</a>
+              </li>
+              <li class="nav-link">
+                <a href="/" aria-label="Galéria">Galéria</a>
+              </li>
+              <li class="nav-link">
+                <a href="/" aria-label="Események">Események</a>
+              </li>
+              <li class="nav-link">
+                <a href="/" class="link--button" aria-label="Kapcsolat"
+                  >Kapcsolat</a
+                >
+              </li>
+            </ul>
+          </nav>
         </div>
-      </section>
+      </div>
+    </navbar>
+
+    <!-- main content -->
+    <main id="index" class="main-content">
+      <div class="container">
+        <h1>riido yaado</h1>
+        <p>
+          あなたはトルコキハシバエを期待していましたが、それは私、DIOでした！
+        </p>
+      </div>
     </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <nav>
+          <div class="row">
+            <div class="column">
+              <span class="footer-logo">something.hu</span>
+              <div class="footer-socials">
+                <a
+                  href="#"
+                  class="footer-icon"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Facebook"
+                  ><img
+                    src="img/footer-socials/facebook.svg"
+                    alt="Facebook ikon"
+                /></a>
+                <a
+                  href="#"
+                  class="footer-icon"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Facebook"
+                  ><img
+                    src="img/footer-socials/instagram.svg"
+                    alt="Instagram ikon"
+                /></a>
+                <a
+                  href="#"
+                  class="footer-icon"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Facebook"
+                  ><img src="img/footer-socials/youtube.svg" alt="Youtube ikon"
+                /></a>
+                <a
+                  href="#"
+                  class="footer-icon"
+                  rel="noopener"
+                  target="_blank"
+                  aria-label="Facebook"
+                  ><img
+                    src="img/footer-socials/linkedin.svg"
+                    alt="LinkedIn ikon"
+                /></a>
+              </div>
+            </div>
+            <div class="column">
+              <span class="footer-sub">Információk</span>
+              <ul class="footer-column-list">
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <span class="footer-sub">Információk</span>
+              <ul class="footer-column-list">
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="column">
+              <span class="footer-sub">Információk</span>
+              <ul class="footer-column-list">
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+                <li>
+                  <a href="/" rel="noopener" target="_blank" aria-label="Link"
+                    >Link</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </footer>
 
     <script src="app/js/script.js"></script>
   </body>

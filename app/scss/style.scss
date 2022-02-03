@@ -1,11 +1,6 @@
 @charset 'utf-8';
 
-// Parts - Helper functions and non–output snippets only (font imports, reusable mixins, global variables, colors, etc.)
-@import "parts/parts-dir";
-
-// Components - Micro level reusable components are imported here
-@import "components/components-dir";
-
-// Layouts - Unique combinations of components and base styles are imported here
-// Media Queries : sm, md, lg xl, xxl
-@import "layout/layout-dir";
+@forward "base";
+@forward "components";
+@forward "layout";
+@forward "pages";

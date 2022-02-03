@@ -1,0 +1,73 @@
+@use "../use" as *;
+
+footer {
+  background-color: $dark;
+  padding: 6rem 0 10rem 0;
+
+  & .footer-logo {
+    font-size: 1.5rem;
+    color: $light;
+    margin-bottom: 2rem;
+    display: inline-block;
+    font-weight: 700;
+  }
+
+  & .footer-socials a {
+    display: inline-block;
+    margin-right: 0.8rem;
+    transition: all 0.25s ease;
+
+    & img {
+      max-width: 100%;
+      width: 1.6rem;
+      transition: all 0.25s ease;
+
+      &:hover {
+        filter: invert(0.3);
+      }
+    }
+  }
+
+  & .footer-sub {
+    color: #a5a5a5;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+
+    @include max-md {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .column {
+    @include flex(flex, flex-start, center, column);
+    @include max-lg {
+      @include flex(flex, center, center, column);
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  }
+
+  & .column:nth-child(1) {
+    @include flex(flex, flex-start, flex-start, column);
+    @include max-lg {
+      @include flex(flex, center, center, column);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  }
+
+  & .footer-column-list li {
+    margin-bottom: 0.8rem;
+
+    & a {
+      color: $light;
+      transition: all 0.25s ease;
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

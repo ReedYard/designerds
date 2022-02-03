@@ -1,0 +1,33 @@
+// riido-yaado basic boilerplate with SCSS
+
+dependencies: node.js, npm
+
+settings.json => 
+
+"liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/dist"
+    }
+  ],
+
+^ compile SCSS file to /dist folder
+
+extensions: 
+
+Bookmarks
+Live Sass Compiler (by Glenn Marks)
+Live Server
+Material Icon Theme
+Prettier
+Project Manager
+Relaxed Theme
+custom font: "mononoki"
+
+commit to github repo:
+
+git init
+git add .
+git commit -m "whatever"
+git remote add origin [repo-url]
