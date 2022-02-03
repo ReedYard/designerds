@@ -2,6 +2,8 @@
 
 dependencies: node.js, npm
 
+--------------------------
+
 settings.json => 
 
 "liveSassCompile.settings.formats": [
@@ -14,6 +16,8 @@ settings.json =>
 
 ^ compile SCSS file to /dist folder
 
+--------------------------
+
 extensions: 
 
 Bookmarks
@@ -25,9 +29,12 @@ Project Manager
 Relaxed Theme
 custom font: "mononoki"
 
+--------------------------
+
 commit to github repo:
 
 git init
 git add .
 git commit -m "whatever"
 git remote add origin [repo-url]
+git push origin master
