@@ -17,19 +17,38 @@ function initToggle() {
   }
 }
 
-// navbar sticky after scrolling
+// navbar set height
 
 window.onscroll = function () {
   myFunction();
 };
 
-var navbar = document.getElementById("main-nav");
-var nav_backdrop = navbar.offsetTop;
+let navbar = document.getElementById("main-nav");
+let nav_backdrop = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset > nav_backdrop) {
     navbar.classList.add("nav-backdrop");
   } else {
     navbar.classList.remove("nav-backdrop");
+  }
+}
+
+// close window on click
+
+let navtoclose = document.getElementById("navbar-nav");
+
+let navlink = document.getElementsByClassName("nav-link");
+
+for (var i = 0, len = navlink.length, elm; i < len; i++) {
+  elm = navlink[i];
+
+  elm.addEventListener("click", navClose);
+}
+
+function navClose() {
+  if (navtoclose.classList.contains("open")) {
+    navtoclose.removeAttribute("style");
+    navtoclose.classList.remove("open");
   }
 }
