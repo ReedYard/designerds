@@ -1,38 +1,42 @@
 @use "../use" as *;
 
 // navbar styles
-
-#main-nav.nav-backdrop {
-  width: 100%;
-  z-index: 100;
-  background-color: rgba(249, 250, 251, 0.9);
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-
-  @include max-md {
-    background-color: $light;
-    box-shadow: none;
-  }
-}
-
 .navbar-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 96.6%;
   z-index: 100;
-  background-color: $light;
+  background-color: rgba(0, 0, 0, 40%);
   padding: 1rem;
   transition: all 0.5s ease;
+  z-index: 9999;
+  margin: 2rem 2rem;
+  border-radius: 20px;
+  box-shadow: -8px 5px 10px rgb(0 0 0 / 40%);
+  backdrop-filter: blur(20px);
+
+  @include max-md {
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 70%);
+  }
 
   & .container-row {
-    @include flex(flex, center, space-between, row);
+    @include flex(flex, center, center, row);
     flex-wrap: wrap;
     background-color: transparent;
     @include lg {
       max-width: 960px;
       margin: 0 auto;
     }
+
+    @include max-md {
+      justify-content: flex-end;
+    }
+
     @include xl {
       max-width: 1320px;
       margin: 0 auto;
@@ -45,13 +49,13 @@
       background-color: transparent;
       border-radius: 4px;
       cursor: pointer;
-      border: 2px solid $dark;
+      border: 2px solid $light;
       display: none;
 
       & span {
         height: 2px;
         width: 20px;
-        background-color: $dark;
+        background-color: $light;
         display: block;
         margin: auto;
         position: relative;
@@ -63,7 +67,7 @@
           left: 0;
           height: 2px;
           width: 20px;
-          background-color: $dark;
+          background-color: $light;
         }
 
         &::after {
@@ -73,12 +77,12 @@
           left: 0;
           height: 2px;
           width: 20px;
-          background-color: $dark;
+          background-color: $light;
         }
       }
 
       &:focus {
-        outline: 2px solid lighten($dark, 60%);
+        outline: 2px solid lighten(#333, 60%);
       }
 
       @include max-md {
@@ -86,14 +90,14 @@
       }
     }
 
-    & .navbar-logo a {
-      color: $dark;
-      font-size: 1.2rem;
-      transition: all 0.25s ease;
-      font-weight: 700;
+    & .navbar-logo {
+      position: absolute;
+      left: 2rem;
+      top: 0.6rem;
 
-      &:hover {
-        color: $blue;
+      @include max-md {
+        top: 0.5rem;
+        left: 0.6rem;
       }
     }
 
@@ -107,29 +111,12 @@
       }
 
       & a {
-        color: $dark;
+        color: $light;
         transition: all 0.25s ease;
         font-size: 1rem;
 
         &:hover {
-          color: $blue;
-        }
-      }
-
-      & .link--button {
-        background-color: $blue;
-        color: $light;
-        padding: 0.5rem 1.2rem;
-        border-radius: 2rem;
-        transition: all 0.25s ease;
-
-        &:hover {
-          background-color: $darkblue;
-          color: $light;
-        }
-
-        &:active {
-          background-color: lighten($blue, 10%);
+          color: $pink;
         }
       }
     }

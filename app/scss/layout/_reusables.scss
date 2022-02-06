@@ -1,13 +1,6 @@
 @use "../use" as *;
 
 // .main-content: include this on every <main> tag, to avoid content sliding behind the navbar
-.main-content {
-  margin-top: 4.3rem;
-}
-
-section {
-  padding: 2rem 0;
-}
 
 .row {
   @include gridColumn;
@@ -19,15 +12,6 @@ section {
   & .column-2 {
     order: 2;
   }
-}
-
-.section-heading {
-  margin: 2rem 0;
-  text-align: center;
-}
-
-.grey-back {
-  background-color: $light;
 }
 
 .fluid {

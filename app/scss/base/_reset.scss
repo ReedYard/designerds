@@ -73,8 +73,9 @@ video {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: none;
   box-sizing: border-box;
-  font-weight: 400;
+  font-weight: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
 footer,
